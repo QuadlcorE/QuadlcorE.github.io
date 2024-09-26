@@ -1,0 +1,34 @@
+.about {
+    background-image: url("../../../public/Images/Image1.jpg");
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .about {
+        background-size: cover;
+        background-position: top center;
+    }
+}
+
+/* For medium screens*/
+@media (max-width: 800px) {
+    .about {
+
+    }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+    .about {
+        height: 800px; /* Or any other fixed height you prefer */
+    }
+}
+
+.image-container {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+  }
