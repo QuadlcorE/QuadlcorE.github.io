@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lemon: ["Lemon", "sans-serif"],
+        Oi: ["Oi", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

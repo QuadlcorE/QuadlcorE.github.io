@@ -1,0 +1,27 @@
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../../assets/background1.jpeg");
+    min-height: 400px;
+  }
+
+.icons {
+    transition: all 0.5s ease;
+}
+
+.icons:hover {
+    scale: 1.15;
+}
+
+.icons-inline {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+  
