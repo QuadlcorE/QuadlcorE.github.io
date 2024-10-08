@@ -53,7 +53,7 @@ export default function Projects() {
                     return (
                         <div key={project.projectname}>
                             <SwiperSlide>
-                                <div className="card card-compact bg-base-100 h-full full w-full shadow-xl">
+                                <div className="card card-compact bg-slate-950 h-full w-full shadow-xl">
                                     <figure className='relative'> 
                                         
                                         <div className="absolute bottom-0 z-10 bg-gradient-to-b from-transparent to-black h-1/2 w-full pointer-events-none"></div>
@@ -82,7 +82,7 @@ export default function Projects() {
                                             <div className='justify-end'>
                                                 <ul>
                                                     {project.demolink ? (
-                                                        <li>
+                                                        <li className='icons-inline pb-2'>
                                                             <a href={project.demolink} target='_blank'>
                                                                 <svg 
                                                                     xmlns="http://www.w3.org/2000/svg" 
@@ -97,7 +97,7 @@ export default function Projects() {
                                                         </li>
                                                     ): null}
                                                     {project.projectlink ? (
-                                                        <li>
+                                                        <li className='icons-inline pb-2'>
                                                             <a href={project.projectlink} target='_blank'>
                                                                 <svg 
                                                                     xmlns="http://www.w3.org/2000/svg" 
@@ -121,46 +121,6 @@ export default function Projects() {
                         </div>
                     )
                 })}
-                <SwiperSlide>
-                <div className="card card-compact bg-base-100 h-full full w-full shadow-xl">
-                    <figure>
-                        <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </SwiperSlide>
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </SwiperSlide>
             </Swiper>
         </div>
     </>
