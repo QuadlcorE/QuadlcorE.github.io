@@ -4,7 +4,7 @@ import "./Home.css"
 
 export default function Skillset() {
   return (
-    <div className="relative isolate overflow-hidden  py-16 sm:py-24 lg:py-32">
+    <div className="relative isolate overflow-hidden  py-32 sm:py-36 lg:py-72">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-3xl">
@@ -33,7 +33,7 @@ export default function Skillset() {
                         </Tooltip>
                       }
                     >
-                      <li className="icons-inline" name={icon.skillName}>
+                      <li className="icons-inline pb-2" name={icon.skillName}>
                         {icon.svg}
                       </li>
                     </OverlayTrigger>
