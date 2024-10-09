@@ -11,9 +11,11 @@ export default function Skillset() {
             <h2 className="text-3xl py-10 font-bold tracking-tight text-white sm:text-4xl">Here’s my digital wizardry</h2>
             {skills.data[0].skills.map((skillSentence) =>{
                 return (
+                  <>
                     <p className="text-left mt-4 text-lg leading-8 text-gray-300">
                         {skillSentence}
                     </p>
+                  </>
                 )
             })
 
