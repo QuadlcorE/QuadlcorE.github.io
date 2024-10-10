@@ -1,4 +1,4 @@
-import Projects from "./components/Home/projects";
+// import Projects from "./components/Home/projects";
 import TetrisClone from "./assets/TetrisClone.jpeg"
 import Gamepwanet from "./assets/Gamepwanet.jpeg"
 

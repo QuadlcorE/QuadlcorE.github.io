@@ -9,13 +9,11 @@ export default function Skillset() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-3xl">
             <h2 className="text-3xl py-10 font-bold tracking-tight text-white sm:text-4xl">Here’s my digital wizardry</h2>
-            {skills.data[0].skills.map((skillSentence) =>{
+            {skills.data[0].skills.map((skillSentence, index) =>{
                 return (
-                  <>
-                    <p className="text-left mt-4 text-lg leading-8 text-gray-300">
+                    <p key={index} className="text-left mt-4 text-lg leading-8 text-gray-300">
                         {skillSentence}
                     </p>
-                  </>
                 )
             })
 
