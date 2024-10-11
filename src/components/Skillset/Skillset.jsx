@@ -1,14 +1,15 @@
 import { skills } from '../../portfolio'
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import "./Home.css"
+import "../Home/Home.css"
 
 export default function Skillset() {
   return (
     <div className="relative isolate overflow-hidden  py-32 sm:py-36 lg:py-72">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-3xl">
-            <h2 className="text-3xl py-10 font-bold tracking-tight text-white sm:text-4xl">Here’s my digital wizardry</h2>
+            <h2 className="text-3xl py-10 font-bold tracking-tight text-red-100 sm:text-4xl">Here’s my digital wizardry</h2>
             {skills.data[0].skills.map((skillSentence, index) =>{
                 return (
                     <p key={index} className="text-left mt-4 text-lg leading-8 text-gray-300">
@@ -20,7 +21,7 @@ export default function Skillset() {
             }
           </div>
           <div className='max-auto max-w-2xl  '>
-            <h2 className="text-3xl py-10 font-bold tracking-tight text-white sm:text-4xl">Technologies</h2>
+            <h2 className="text-3xl py-10 font-bold tracking-tight text-red-100 sm:text-4xl">Technologies</h2>
             <ul className='justify-center content-center'>
                 {skills.data[0].softwareSkills.map((icon) => {
                     return (

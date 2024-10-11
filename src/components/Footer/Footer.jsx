@@ -4,7 +4,7 @@ import { skills } from '../../portfolio'
 export default function Footer() {
     return (
     <footer className="footer  text-neutral-content items-center p-4">
-        <div className="flex items-center justify-center max-w-screen-lg w-full mx-auto px-28">
+        <div className="flex items-center justify-center max-w-screen-lg w-full mx-auto md:px-28">
             <div className="flex-1">
                 <hr />
             </div>

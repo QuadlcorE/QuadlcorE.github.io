@@ -1,9 +1,12 @@
-import './Home.css' 
+import Navbar from '../Navbar/Navbar'
+import '../Home/Home.css' 
 
 export default function Welcome() {
   return (
     <>
-      <div className="relative isolate overflow-hidden py-24 sm:py-32 bgimg-2">
+        
+      <div className="relative isolate overflow-hidden pb-24 pt-10 sm:pb-32 sm:pt-16 bgimg-2">
+      <Navbar/>
           {/* <img
           alt=""
               src={artimage}
@@ -39,7 +42,7 @@ export default function Welcome() {
           </div>
           <div className="mx-auto min-h-[30vh] lg:min-h-[40vh] max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-[100rem] md:mt-36 lg:mr-[30rem]  lg:mt-56">
-                  <h2 className="text-left text-4xl font-bold font-Oi tracking-tight text-white sm:text-6xl">Welcome!</h2>
+                  <h2 className="text-left text-4xl font-bold font-Oi tracking-tight text-red-100 sm:text-6xl">Welcome!</h2>
                   <p className="text-left mt-8 text-lg leading-8 text-gray-300">
                   I'm Aaron, skilled in software development and illustration. 
                   Explore my work and don't hesitate to hit me up if something catches your eye. 

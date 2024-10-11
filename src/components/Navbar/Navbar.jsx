@@ -2,7 +2,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
   { name: 'Projects', href: '#', current: false },
   { name: 'Resume', href: '#', current: false },
 ]
@@ -27,11 +26,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-              <img
-                alt="Your Company"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
-              />
+                  {/* For Later */}
                 </div>
             </div>
             <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-end'>
@@ -41,7 +36,7 @@ export default function Navbar() {
                         <a
                             key={item.name}
                             href={item.href}
-                            aria-current={item.current ? 'page' : undefined}
+                            // aria-current={item.current ? 'page' : undefined}
                             className={classNames(
                             // item.current ? ' text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                             item.current ? 'text-[#E84545] scale-110 hover:text-[#E84545] hover:scale-125' : 'text-white hover:text-[#E84545] hover:scale-110',
