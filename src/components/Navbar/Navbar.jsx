@@ -2,8 +2,9 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Resume', href: '#', current: false },
+  // { name: 'Home', href: '/', current: true},
+  // { name: 'Projects', href: '/project', current: false },
+  { name: 'Resume', href: 'https://docs.google.com/document/d/1PshDLnxYdSb1nUJQk1GJiVJu-NNIbI7fKbMETYV-mIc/edit?usp=sharing', current: false },
 ]
 
 function classNames(...classes) {
@@ -36,6 +37,7 @@ export default function Navbar() {
                         <a
                             key={item.name}
                             href={item.href}
+                            target= {item.name === 'Resume' ? "_blank" : undefined}
                             // aria-current={item.current ? 'page' : undefined}
                             className={classNames(
                             // item.current ? ' text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',

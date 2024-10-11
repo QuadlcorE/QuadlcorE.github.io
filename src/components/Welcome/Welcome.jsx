@@ -49,7 +49,7 @@ export default function Welcome() {
                   Let's bring some magic to your digital world!
                   </p>
                   <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-                    <a className="text-white text hover:text-[#E84545] hover:scale-125 transition-all duration-300 mt-4 mx-3" href="#">
+                    <a className="text-white text hover:text-[#E84545] hover:scale-125 transition-all duration-300 mt-4 mx-3" href="/contact">
                       Contact me 
                       <span aria-hidden="true">&rarr;</span></a>
                   </div>

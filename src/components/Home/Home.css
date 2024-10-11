@@ -1,4 +1,4 @@
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -15,6 +15,24 @@
     background-position: top;
     background-image: url("../../assets/background2.jpeg");
     min-height: 400px;
+}
+
+.bgimg-3 {
+  background-position: top;
+  background-image: url("../../assets/background3.jpeg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-position: top;
+  background-image: url("../../assets/background4.jpeg");
+  min-height: 400px;
+}
+
+.bgimg-5 {
+  background-position: top;
+  background-image: url("../../assets/background5.jpeg");
+  min-height: 400px;
 }
 
 .icons {
