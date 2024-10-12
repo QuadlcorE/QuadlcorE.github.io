@@ -6,7 +6,7 @@ const skills = {
     data: [
       {
         skills: [
-            "Craft lightning-fast, interactive UIs that'll make your web apps sparkle!",
+            // "Craft lightning-fast, interactive UIs that'll make your web apps sparkle!",
             "Bringing mobile apps to life with Flutter magic!",
             "Building powerful backends in Flask & Django – the dynamic duo",
             "Plugging in cool tools like Firebase to supercharge your apps!",

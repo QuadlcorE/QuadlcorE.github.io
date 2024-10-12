@@ -8,9 +8,12 @@ function More() {
                 Are you ready to kickstart your project with a touch of magic?
             </h2>
             <p className='pb-3'> Reach out and let's make it happen✨. I'm available for part-time opportunities to push the boundaries of design and deliver exceptional work. </p>
-            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group border-2 border-transparent transition-all duration-300 bg-slate-600 hover:bg-transparent hover:border-slate-600 hover:text-white">
-                <h2 className='text-2xl py-1 px-3'>Let's Talk </h2>
-            </button>
+            <a href="/contact" rel="noopener noreferrer">
+                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group border-2 border-transparent transition-all duration-300 bg-slate-600 hover:bg-transparent hover:border-slate-600 text-white hover:text-white">
+                    <h2 class="text-2xl py-1 px-3">Let's Talk</h2>
+                </button>
+            </a>
+
 
             <p className='pt-4'>
                 If you're Interested in my illustrations and art feel free to check them out here.

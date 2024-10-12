@@ -10,11 +10,59 @@ import { Field, Label, Switch } from '@headlessui/react'
 import Footer from '../Footer/Footer'
 
 export default function ContactPage() {
+  const [popupMessage, setPopupMessage] = useState(''); // State for pop-up
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const formData = new FormData(form); // Get form data
+
+    try {
+      const response = await fetch('https://formsubmit.co/a84d049ca72b7c3fce8bf1ce8b7d8911', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setPopupMessage('Email sent successfully!');
+        form.reset(); // Clear form after successful submission
+      } else {
+        setPopupMessage('Failed to send the email. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setPopupMessage('An error occurred. Please try again.');
+    }
+
+    // Automatically hide the pop-up after 3 seconds
+    setTimeout(() => setPopupMessage(''), 3000);
+  };
+
   return (
     <>
 
     <div className="min-h-[80vh] relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 ">
 
+    <div className="mx-auto max-w-screen-lg px-2 sm:px-6 lg:px-28">
+  <div className="relative flex h-16 items-center justify-between">
+    
+    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+      <div className="flex flex-shrink-0 items-center">
+        <span className="text-white text-lg font-medium">
+          <a href='/'>  
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512">
+              <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m112 160l-64 64l64 64" />
+              <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M64 224h294c58.76 0 106 49.33 106 108v20" />
+            </svg>
+          </a>
+        </span> {/* Modified part */}
+      </div>
+    </div>
+
+    <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0" />
+  </div>
+</div>
 
 
       <div className='absolute inset-0 -z-10 h-full w-full object-cover object-top md:object-top bgimg-3'></div>
@@ -28,7 +76,8 @@ export default function ContactPage() {
         You can fill in the from below, or simply send a mail to ogbemiaaron@gmail.com .
         </p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <input type="hidden" name="_captcha" value="false"/>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="sm:col-span-2">
             <label htmlFor="company" className="text-left block text-sm font-semibold leading-6 text-gray-400">
@@ -83,6 +132,12 @@ export default function ContactPage() {
           </button>
         </div>
       </form>
+
+      {popupMessage && (
+        <div className="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-2 rounded-md shadow-md">
+          {popupMessage}
+        </div>
+      )}
     </div>
     <Footer/>
     </>
