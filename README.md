@@ -2,7 +2,27 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First install dependencies:
+
+```bash
+npm install
+# or 
+pnpm install
+# or
+yarn install
+# or
+bun install
+```
+
+Create a .env.local file in the root directory. 
+
+Paste your cointracker API key from [CoinGecko][https://www.coingecko.com/en/developers/dashboard]
+
+```
+API_KEY=yourAPIkey
+```
+
+Run the development server:
 
 ```bash
 npm run dev
