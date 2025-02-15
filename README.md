@@ -16,7 +16,7 @@ bun install
 
 Create a .env.local file in the root directory. 
 
-Paste your cointracker API key from [CoinGecko][https://www.coingecko.com/en/developers/dashboard]
+Paste your cointracker API key from [CoinGecko](https://www.coingecko.com/en/developers/dashboard)
 
 ```
 API_KEY=yourAPIkey
