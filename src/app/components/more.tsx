@@ -17,10 +17,10 @@ export default function More() {
             </a>
 
 
-            <p className='pt-4'>
+            <p className="pt-4">
                 If you're Interested in my illustrations and art feel free to check them out here.
             </p>
-            <a className='inline-block pt-3' href={DataStrings.portfolio} target='_blank'>
+            <a className="inline-block pt-3" href={DataStrings.portfolio} target="_blank">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="2em" 
