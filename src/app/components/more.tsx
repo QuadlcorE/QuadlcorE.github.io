@@ -7,18 +7,18 @@ export default function More() {
     <div className={`${styles.containerinner} ${styles.glassy} glassy mx-auto max-w-7xl mb-24 font-lemon`}>
         <div className="md:px-40 md:pb-16 text-center">
             <h2 className="text-3xl py-10 font-bold tracking-tight text-indigo-100 sm:text-4xl">
-                Are you ready to kickstart your project with a touch of magic?
+                {DataStrings.more[0]}
             </h2>
-            <p className="pb-3"> Reach out and let's make it happen✨. I'm available for part-time opportunities to push the boundaries of design and deliver exceptional work. </p>
+            <p className="pb-3"> {DataStrings.more[1]} </p>
             <a href="/contact" rel="noopener noreferrer">
                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group border-2 border-transparent transition-all duration-300 bg-slate-600 hover:bg-transparent hover:border-slate-600 text-white hover:text-white">
-                    <h2 className="text-2xl py-1 px-3">Let's Talk</h2>
+                    <h2 className="text-2xl py-1 px-3">{DataStrings.more[2]}</h2>
                 </button>
             </a>
 
 
             <p className="pt-4">
-                If you're Interested in my illustrations and art feel free to check them out here.
+                {DataStrings.more[3]}
             </p>
             <a className="inline-block pt-3" href={DataStrings.portfolio} target="_blank">
                 <svg 

@@ -8,6 +8,12 @@ export const DataStrings = {
     "Building powerful backends in Flask & Django – the dynamic duo.",
     "Plugging in cool tools like Firebase to supercharge your apps!",
   ],
+  more: [
+    "Are you ready to kickstart your project with a touch of magic?",
+    "Reach out and let's make it happen✨. I'm available for part-time opportunities to push the boundaries of design and deliver exceptional work.",
+    "Let's Talk",
+    "If you're Interested in my illustrations and art feel free to check them out here.",
+  ],
   projects: [
     {
       projectname: "Tetris Clone",
