@@ -5,18 +5,26 @@ import { DataStrings } from "@/utils/constants";
 
 export default function Welcome() {
   return (
-    <div className="relative isolate overflow-hidden pb-24 pt-10 sm:pb-32 sm:pt-16">
+    <div className="relative isolate overflow-hidden pb-24 pt-10 sm:pb-32 sm:pt-16"
+      style={{
+        backgroundImage: 'url(/images/backgrounds/background1.jpeg)',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: '100%',
+      }}
+    >
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <Image
-          src="/background1.jpeg"
+          src="/images/backgrounds/background1.jpeg"
           alt="Background Image"
           layout="fill"
           objectFit="cover"
           objectPosition="top"
           quality={100}
         />
-      </div>
+      </div> */}
 
       {/* Navbar */}
       <Navbar />
