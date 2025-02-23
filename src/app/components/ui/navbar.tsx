@@ -1,8 +1,9 @@
 import React from 'react'
+import { DataStrings } from '@/utils/constants'
 
 const navigation = [
     // { name: 'Projects', href: '/projects' target: ""},
-    { name: 'Resume', current: false, href: 'https://drive.google.com/file/d/1FDqifbG7HQOuaA0T_cFChFp52qcdoIU7/view?usp=drive_link', target: "_blank" },
+    { name: 'Resume', current: false, href: DataStrings.resume, target: "_blank" },
 ]
 
 export default function Navbar() {

@@ -779,4 +779,6 @@ export const DataStrings = {
     //   },
     // },
   ],
+  portfolio: `https://drive.google.com/file/d/1yJSVLxlz-PYGSEw-ro2tm3LMrh8_fVA0/view?usp=sharing`,
+  resume: `https://drive.google.com/file/d/1FDqifbG7HQOuaA0T_cFChFp52qcdoIU7/view?usp=drive_link`,
 };

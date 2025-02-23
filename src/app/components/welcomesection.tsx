@@ -1,17 +1,17 @@
 import React from "react";
-import Image from "next/image";
 import Navbar from "./ui/navbar";
 import { DataStrings } from "@/utils/constants";
 
 export default function Welcome() {
   return (
-    <div className="relative isolate overflow-hidden pb-24 pt-10 sm:pb-32 sm:pt-16"
+    <div
+      className="relative isolate overflow-hidden pb-24 pt-10 sm:pb-32 sm:pt-16"
       style={{
-        backgroundImage: 'url(/images/backgrounds/background1.jpeg)',
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        width: '100%',
+        backgroundImage: "url(/images/backgrounds/background1.jpeg)",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100%",
       }}
     >
       {/* Background Image */}
@@ -75,7 +75,7 @@ export default function Welcome() {
               href="/contact"
             >
               Contact me
-              <span aria-hidden="true">&rarr;</span>
+              <span aria-hidden="true"></span>
             </a>
           </div>
         </div>
