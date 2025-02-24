@@ -16,14 +16,18 @@ export const DataStrings = {
   ],
   projects: [
     {
-      projectname: "Tetris Clone",
-      projectlink: "https://github.com/QuadlcorE/Tetris-Clone",
-      demolink: "",
-      about:
-        "This a game built with Pygame, featuring piece rotation, grid collision detection, and real-time scoring.",
-      //   projectimage: TetrisClone,
-      technologies: ["Python"],
-      projectimage: "/images/projects/tetrisclone.jpeg",
+      projectname: "Lexyk landing page",
+      projectlink: "https://github.com/devopsean/lexyk-website",
+      demoLink: "https://www.lexykapp.com/",
+      about: "A landing page for Lexyk, a language learning app.",
+      projectimage: "/images/projects/Lexyk.jpeg",
+    },
+    {
+      projectname: "Crypto Tracker",
+      projectlink: "https://github.com/QuadlcorE/cryptotracker",
+      demolink: "https://cryptotracker-hazel.vercel.app/",
+      about: "A simple cryptocurrency tracker built with Next.js. Allows one to veiw details on a coin as well as check pricing and calculate conversions.",
+      projectimage: "/images/projects/Cryptotracker.jpeg",
     },
     {
       projectname: "Gamepwanet",
@@ -33,7 +37,17 @@ export const DataStrings = {
         "A website for searching and viewing games allows users to easily explore, discover, and access detailed information about a wide variety of games across different platforms.",
       //   projectimage: Gamepwanet,
       technologies: ["Python", "Flask", "HTML5", "CSS3"],
-      projectimage: "/images/projects/gamepwanet.jpeg",
+      projectimage: "/images/projects/Gamepwanet.jpeg",
+    },
+    {
+      projectname: "Tetris Clone",
+      projectlink: "https://github.com/QuadlcorE/Tetris-Clone",
+      demolink: "",
+      about:
+        "This a game built with Pygame, featuring piece rotation, grid collision detection, and real-time scoring.",
+      //   projectimage: TetrisClone,
+      technologies: ["Python"],
+      projectimage: "/images/projects/tetrisclone.jpeg",
     },
   ],
   socials: [
