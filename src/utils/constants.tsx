@@ -30,6 +30,13 @@ export const DataStrings = {
       projectimage: "/images/projects/Cryptotracker.jpeg",
     },
     {
+      projectname: "File Search Engine",
+      projectlink: "https://github.com/QuadlcorE/File-Search-Engine",
+      demolink: "empty",
+      about: "A search engine using .NET and C# that allows users to search for words within a collection of files.",
+      projectimage: "",
+    },
+    {
       projectname: "Gamepwanet",
       projectlink: "https://github.com/QuadlcorE/Gamepwanet",
       demolink: "https://gamepwanet.onrender.com/",
@@ -47,8 +54,17 @@ export const DataStrings = {
         "This a game built with Pygame, featuring piece rotation, grid collision detection, and real-time scoring.",
       //   projectimage: TetrisClone,
       technologies: ["Python"],
-      projectimage: "/images/projects/tetrisclone.jpeg",
+      projectimage: "/images/projects/TetrisClone.jpeg",
     },
+    {
+      projectname: "Robo Wipeout",
+      projectlink: "https://github.com/QuadlcorE/Robo-Wipeout",
+      demolink: "https://d-dragoon.itch.io/robo-wipeout",
+      about:
+        "A 3D game built with Unity, where the player controls a robot to navigate through an obstacle course as fast as possible.",
+      technologies: ["C#", "Unity"],
+      projectimage: "/images/projects/RoboWipeout.jpeg",
+    }
   ],
   socials: [
     {

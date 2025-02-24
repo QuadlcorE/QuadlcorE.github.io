@@ -9,14 +9,15 @@ export default function ImageContent() {
                   return (
                     <div key={project.projectname} className="group relative ">
                           <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group">
-                            <Image
+                            {project.projectimage ? (<Image
                               src={project.projectimage}
                               alt="Project screenshot"
                               layout="fill"
                               objectFit="cover"
                               objectPosition="top"
                               quality={100}
-                            />
+                            />): null}
+                            
                             <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-80"></div>
                             <a
                               href={project.projectlink}
